@@ -6,11 +6,14 @@ const Section = styled.section`
     justify-content: space-between;
     margin: 10px;
 `;
-
+const H1 = styled.h1`
+    margin: 10px;
+    color: rgba(133, 125, 252, 0.9);
+`;
 const AreaAdmin = () =>{
     return(
         <Section>
-            <h1>HOME</h1>
+            <H1>HOME</H1>
         </Section>
     );
 }

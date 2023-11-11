@@ -15,7 +15,7 @@ const Section = styled.section`
 const Produtos = () => {
     let [open, setOpen] = useState(false);
     
-    const handleInputChange = () => {
+    const closehooks = () => {
        open = !open
        setOpen(open)
       };
@@ -25,7 +25,7 @@ const Produtos = () => {
             <H1>Lista de Produtos Cadastrados</H1>
             <Section>
                 <Table/>
-                {open ? <DialogBox hooksChildren={handleInputChange}/> : <></>} 
+                {open ? <DialogBox hooksChildren={closehooks}/> : <></>} 
             </Section>
         </>
     );
